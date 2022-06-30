@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+// font family
+// main variables
+$main-font: 'Nunito', sans-serif;
+$color-main: #ffa500;
+$secondary-color: #6c6666;
+$header-bg: #ffedcc;
+$input-bg: #f7f7f7;
+$footer: #333333;
+
+$transition: all .3s ease;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+body {
+    font-family: $main-font;
+    transition: $transition;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-main;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: $footer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+    flex-direction: column;
+
+    .nav {
+        width: 100%;
+    }
+
+    #navMenu {
+        height: 37px;
+        width: 46px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        display: none;
+        cursor: pointer;
+    }
+    #navMenuDel{
+        height: 37px;
+        width: 46px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        display: none;
+        cursor: pointer;
+    }
+
+    .navContainer {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: 75px;
+
+        .siteNav {
+            // border: 1px solid #fff;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            .navLogo {
+                a {
+                    font-size: 26px;
+                    font-weight: bolder;
+                    transition: all .3s ease;
+                    color: #fff;
+
+                    span {
+                        color: $color-main;
+                    }
+
+                    a:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .navTab {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    li:not(last-child) {
+                        margin-right: 20px;
+
+                        a {
+                            font-size: 18px;
+                            font-weight: 500;
+                            transition: all .3s ease;
+                            color: #fff;
+                        }
+
+                        a:hover {
+                            color: $color-main;
+                        }
+                    }
+                }
+            }
+
+            .navLogin {
+                i {
+                    font-size: 25px;
+                    transition: all .3s ease;
+                }
+
+                .two {
+                    padding-left: 10px;
+                }
+
+                i:hover {
+                    color: $color-main;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    @keyframes mymove {
+        0%   {top: 0px;}
+        25%  {top: 200px;}
+        50%  {top: 100px;}
+        75%  {top: 200px;}
+        100% {top: 0px;}
+      }
+    .responsMenu {
+        // padding-top: 71px;
+        width: 100%;
+        color: #fff;
+        background: $footer;
+        border-top: 1px solid #fff;
+        transition: $transition;
+        display: none;
+        ul {
+            padding: 15px;
+
+            li {
+                div {
+                    background-color: #222222;
+                    padding: 15px;
+                    margin-top: 10px;
+                    transition: $transition;
+                    width: 97%;
+                    border-radius: 7px;
+
+                    a {
+                        color: #ffff;
+                        font-size: 18px;
+                        transition: $transition;
+
+                    }
+
+                    a:hover {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 990px) {
+        .navContainer {
+            width: 97%;
+        }
+        .navTab{
+            display: none;
+        }
+        #home{
+            .content{
+                h1{
+                    width: 120%;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 768px) { 
+    header{
+        #navMenu{
+            display: flex;
+        }
+        .navContainer{
+            .siteNav{
+                .navLogo{
+                    // border: 1px solid #fff;
+                    margin: auto;
+                    a{
+                        font-size: 23px;
+                    }
+                }
+                .navTab{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#home{
+    .videoBg{
+        video{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        }
+    }
+    .content{
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: 38%;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+
+        h1{
+            font-size: 45px;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        h3{
+            font-size: 24px;
+        }
+
+            button{
+                border: 2px solid $color-main;
+                padding: 8px;
+                margin-top: 5px;
+                color: #fff;
+                background-color: $color-main;
+                width: 175px;
+                a{
+                    color: #fff;
+                }
+            }
+            button:hover{
+                background-color: #ffa60060;
+            }
+
+        .controls{
+            background:#141414e1;
+            width: 180px;
+            height: 40px;
+            margin: 98px auto; 
+            border-radius: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            .control{
+                background-color: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                z-index: 99;
+                cursor: pointer;
+            }
+            .control.active{
+                background: $color-main;
+            }
+            
+        }
+    } 
+}
+

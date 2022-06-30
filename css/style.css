@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffa500;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background-color: #333333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+  flex-direction: column;
+}
+header .nav {
+  width: 100%;
+}
+header #navMenu {
+  height: 37px;
+  width: 46px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  display: none;
+  cursor: pointer;
+}
+header #navMenuDel {
+  height: 37px;
+  width: 46px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  display: none;
+  cursor: pointer;
+}
+header .navContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+header .navContainer .siteNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .navContainer .siteNav .navLogo a {
+  font-size: 26px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+header .navContainer .siteNav .navLogo a span {
+  color: #ffa500;
+}
+header .navContainer .siteNav .navLogo a a:hover {
+  color: #fff;
+}
+header .navContainer .siteNav .navTab {
+  display: flex;
+  align-items: center;
+}
+header .navContainer .siteNav .navTab ul {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navContainer .siteNav .navTab ul li:not(last-child) {
+  margin-right: 20px;
+}
+header .navContainer .siteNav .navTab ul li:not(last-child) a {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+header .navContainer .siteNav .navTab ul li:not(last-child) a:hover {
+  color: #ffa500;
+}
+header .navContainer .siteNav .navLogin i {
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+header .navContainer .siteNav .navLogin .two {
+  padding-left: 10px;
+}
+header .navContainer .siteNav .navLogin i:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+@-webkit-keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+header .responsMenu {
+  width: 100%;
+  color: #fff;
+  background: #333333;
+  border-top: 1px solid #fff;
+  transition: all 0.3s ease;
+  display: none;
+}
+header .responsMenu ul {
+  padding: 15px;
+}
+header .responsMenu ul li div {
+  background-color: #222222;
+  padding: 15px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  width: 97%;
+  border-radius: 7px;
+}
+header .responsMenu ul li div a {
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+header .responsMenu ul li div a:hover {
+  color: #ffa500;
+}
+@media (max-width: 990px) {
+  header .navContainer {
+    width: 97%;
+  }
+  header .navTab {
+    display: none;
+  }
+  header #home .content h1 {
+    width: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  header #navMenu {
+    display: flex;
+  }
+  header .navContainer .siteNav .navLogo {
+    margin: auto;
+  }
+  header .navContainer .siteNav .navLogo a {
+    font-size: 23px;
+  }
+  header .navContainer .siteNav .navTab {
+    display: none;
+  }
+}
+#home .videoBg video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 0;
+}
+#home .content {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 38%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+#home .content h1 {
+  font-size: 45px;
+  font-weight: 700;
+  width: 100%;
+}
+#home .content h3 {
+  font-size: 24px;
+}
+#home .content button {
+  border: 2px solid #ffa500;
+  padding: 8px;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 175px;
+}
+#home .content button a {
+  color: #fff;
+}
+#home .content button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
+}
+#home .content .controls {
+  background: rgba(20, 20, 20, 0.8823529412);
+  width: 180px;
+  height: 40px;
+  margin: 98px auto;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+#home .content .controls .control {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 99;
+  cursor: pointer;
+}
+#home .content .controls .control.active {
+  background: #ffa500;
+}/*# sourceMappingURL=style.css.map */
