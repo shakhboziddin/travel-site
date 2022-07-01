@@ -474,3 +474,34 @@ header {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+#services{
+    .serviceCards{
+        .serviceCard{
+            text-align: center;
+            padding: 10px;
+            
+            i{
+                font-size: 55px;
+                color: $color-main;
+            }
+            h3{
+                font-size: 25px;
+                font-weight: 600;
+                margin: 12px auto;
+            }
+            p{
+                font-size: 15px;
+                color: $secondary-color;
+            }
+
+
+        }
+        .serviceCard:hover{
+            -webkit-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+
+        }
+    }
+}
