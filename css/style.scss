@@ -302,3 +302,84 @@ header {
     } 
 }
 
+// All sections headder
+.allHeader{
+    width: 390px;
+    margin: 44px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span{
+        width: 49px; 
+        height: 53px;
+        border-radius: 10px;
+        background-color: #ffedcc;
+        color: $color-main;
+        font-size: 32px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .space{
+        margin-left: 15px;
+    }
+}
+
+// book section
+
+#book{
+    .bookContainer{
+        .bookRow{
+            .bookImg{
+                img{
+                    width:577px;
+                    height: 561px;
+                }
+            }
+
+            .bookForm{
+                width: 614px;
+                height: 515px;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+                box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);                
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px 0;
+                    span{
+                        margin: 10px 0;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #666667;
+                    }
+                    input{
+                        padding: 10px;
+                        outline: none;
+                    }
+
+                }
+
+                button{
+                    border: 2px solid $color-main;
+                    padding: 8px;
+                    margin-top: 5px;
+                    color: #fff;
+                    background-color: $color-main;
+                    width: 145px;
+                    a{
+                        color: #fff;
+                    }
+                }
+                button:hover{
+                    background-color: #ffa60060;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
