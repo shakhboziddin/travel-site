@@ -287,6 +287,8 @@ header .responsMenu ul li div a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5px;
+  padding: 10px;
 }
 .allHeader .space {
   margin-left: 15px;
@@ -331,4 +333,79 @@ header .responsMenu ul li div a:hover {
 #book .bookContainer .bookRow .bookForm button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
+}
+
+#packages .packagesCards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+#packages .packagesCards .packgesCard {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+#packages .packagesCards .packgesCard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 16rem;
+}
+#packages .packagesCards .packgesCard .content {
+  padding: 25px;
+}
+#packages .packagesCards .packgesCard .content .place {
+  display: flex;
+}
+#packages .packagesCards .packgesCard .content .place .location {
+  color: #ffa500;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 0px;
+}
+#packages .packagesCards .packgesCard .content .place h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+#packages .packagesCards .packgesCard .content p {
+  color: #6c6666;
+  font-size: 17px;
+  margin-bottom: 0;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+#packages .packagesCards .packgesCard .content .stars {
+  color: #ffa500;
+  padding: 9px 0;
+  font-size: 16px;
+}
+#packages .packagesCards .packgesCard .content h5 s {
+  font-size: 15px;
+  color: #6c6666;
+}
+#packages .packagesCards .packgesCard .content button {
+  border: 2px solid #ffa500;
+  padding: 8px;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 145px;
+}
+#packages .packagesCards .packgesCard .content button a {
+  color: #fff;
+}
+#packages .packagesCards .packgesCard .content button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
+  color: #ffa500;
+}
+
+.package {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
