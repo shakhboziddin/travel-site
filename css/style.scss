@@ -304,7 +304,7 @@ header {
 
 // All sections headder
 .allHeader{
-    width: 390px;
+    width: 30%;
     margin: 44px auto;
     display: flex;
     align-items: center;
@@ -502,6 +502,137 @@ header {
             -moz-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
 
+        }
+    }
+}
+
+// gallery
+#gallery{
+    overflow: hidden;
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+
+        .case:hover .content{
+            top: 5px;
+        }
+        .case{
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            border: 5px solid #fff;
+            border-radius: 7px;
+            -webkit-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+            padding: 5px;
+            transition: all .8s ease-in;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .content{
+                position: absolute;
+                z-index: 99;
+                top: -500px;
+                padding: 12px;
+                text-align: center;
+                padding-top: 40px;
+                background: rgba(0,0,0,.7);
+                width: 97%;
+                height: 96%;
+                color: #fff;
+                transition: all .2s linear;
+
+                h4{
+                    color: $color-main;
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+                p{
+                    width: 90%;
+                    margin: 10px auto;
+                }
+                button{
+                    border: 2px solid $color-main;
+                    padding: 6px;
+                    margin-top: 5px;
+                    color: #fff;
+                    background-color: $color-main;
+                    width: 135px;
+                    a{
+                        color: #fff;
+                    }
+                }
+                button:hover{
+                    background-color: #ffa60060;
+                    color: $color-main;
+                }
+            }
+        }
+
+
+    }
+    .egypt:hover .content{
+        top: 5px;
+    }
+    .egypt{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        border: 5px solid #fff;
+        border-radius: 7px;
+        -webkit-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+        padding: 5px;
+        transition: all .8s ease-in;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content{
+            position: absolute;
+            z-index: 99;
+            top: -500px;
+            padding: 12px;
+            text-align: center;
+            padding-top: 40px;
+            background: rgba(0,0,0,.7);
+            width: 100%;
+            height: 96%;
+            color: #fff;
+            transition: all .2s linear;
+
+            h4{
+                color: $color-main;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            p{
+                width: 90%;
+                margin: 10px auto;
+            }
+            button{
+                border: 2px solid $color-main;
+                padding: 6px;
+                margin-top: 5px;
+                color: #fff;
+                background-color: $color-main;
+                width: 135px;
+                a{
+                    color: #fff;
+                }
+            }
+            button:hover{
+                background-color: #ffa60060;
+                color: $color-main;
+            }
         }
     }
 }

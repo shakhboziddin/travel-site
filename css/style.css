@@ -270,7 +270,7 @@ header .responsMenu ul li div a:hover {
 }
 
 .allHeader {
-  width: 390px;
+  width: 30%;
   margin: 44px auto;
   display: flex;
   align-items: center;
@@ -429,4 +429,127 @@ header .responsMenu ul li div a:hover {
 }
 #services .serviceCards .serviceCard:hover {
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+
+#gallery {
+  overflow: hidden;
+}
+#gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+#gallery .gallery .case:hover .content {
+  top: 5px;
+}
+#gallery .gallery .case {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 7px;
+  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+  transition: all 0.8s ease-in;
+}
+#gallery .gallery .case img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#gallery .gallery .case .content {
+  position: absolute;
+  z-index: 99;
+  top: -500px;
+  padding: 12px;
+  text-align: center;
+  padding-top: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 97%;
+  height: 96%;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+#gallery .gallery .case .content h4 {
+  color: #ffa500;
+  font-weight: 700;
+  font-size: 25px;
+}
+#gallery .gallery .case .content p {
+  width: 90%;
+  margin: 10px auto;
+}
+#gallery .gallery .case .content button {
+  border: 2px solid #ffa500;
+  padding: 6px;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 135px;
+}
+#gallery .gallery .case .content button a {
+  color: #fff;
+}
+#gallery .gallery .case .content button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
+  color: #ffa500;
+}
+#gallery .egypt:hover .content {
+  top: 5px;
+}
+#gallery .egypt {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 7px;
+  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+  transition: all 0.8s ease-in;
+}
+#gallery .egypt img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#gallery .egypt .content {
+  position: absolute;
+  z-index: 99;
+  top: -500px;
+  padding: 12px;
+  text-align: center;
+  padding-top: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 96%;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+#gallery .egypt .content h4 {
+  color: #ffa500;
+  font-weight: 700;
+  font-size: 25px;
+}
+#gallery .egypt .content p {
+  width: 90%;
+  margin: 10px auto;
+}
+#gallery .egypt .content button {
+  border: 2px solid #ffa500;
+  padding: 6px;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 135px;
+}
+#gallery .egypt .content button a {
+  color: #fff;
+}
+#gallery .egypt .content button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
+  color: #ffa500;
 }/*# sourceMappingURL=style.css.map */
