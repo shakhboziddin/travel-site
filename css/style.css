@@ -279,7 +279,7 @@ header .responsMenu ul li div a:hover {
 .allHeader span {
   width: 49px;
   height: 53px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffedcc;
   color: #ffa500;
   font-size: 32px;
@@ -557,27 +557,83 @@ header .responsMenu ul li div a:hover {
   color: #ffa500;
 }
 
-#review .swaper {
-  display: flex;
+#review {
   overflow: hidden;
+  padding: 20px;
 }
-#review .swaper .swaper-card {
-  margin: 20px 20px;
-  width: 45rem;
-  height: 25rem;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 5px 12px 2px rgba(34, 60, 80, 0.2);
+#review .block {
+  border-radius: 15px;
   text-align: center;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
-#review .swaper .swaper-card img {
-  width: 130px;
-  height: 130px;
+#review .block h3 {
+  color: grey;
+  font-size: 25px;
+}
+#review .block img {
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
 }
-#review .swaper .swaper-card p {
-  color: #6c6666;
+#review .block p {
+  padding: 15px 0;
+  color: grey;
+  font-size: 15px;
 }
-#review .swaper .swaper-card .stars {
+#review .block .stars i {
+  color: orange;
+  font-size: 17px;
+}
+
+#contact .contactForm img {
+  width: 90%;
+  margin: auto;
+}
+#contact .contactForm .form {
+  margin: auto;
+  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#contact .contactForm .form div {
+  width: 100%;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact .contactForm .form div input {
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 270px;
+  margin: 5px;
+}
+#contact .contactForm .form textarea {
+  width: 555px;
+  padding: 10px;
+  height: 142px;
+  border: none;
+  margin-left: 14px;
+  background: #f7f7f7;
+}
+#contact .contactForm .form button {
+  border: 2px solid #ffa500;
+  padding: 6px;
+  margin: 10px 12px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 135px;
+}
+#contact .contactForm .form button a {
+  color: #fff;
+}
+#contact .contactForm .form button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
 }/*# sourceMappingURL=style.css.map */
