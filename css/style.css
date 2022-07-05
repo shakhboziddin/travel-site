@@ -270,47 +270,57 @@ header .responsMenu ul li div a:hover {
 }
 
 .allHeader {
-  width: 20%;
-  margin: 44px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  padding: 2.5rem;
+  margin: auto;
+  width: 100%;
+  margin: 0px auto;
+  font-size: 40px;
+  font-weight: 600;
 }
 .allHeader span {
-  width: 49px;
-  height: 53px;
-  border-radius: 5px;
-  background-color: #ffedcc;
+  background: rgba(255, 165, 0, 0.2);
   color: #ffa500;
-  font-size: 32px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5px;
-  padding: 10px;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
 }
 .allHeader .space {
   margin-left: 15px;
 }
 
+#book .bookContainer {
+  width: 80%;
+  margin: auto;
+}
+#book .bookContainer .bookRow {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#book .bookContainer .bookRow .bookImg {
+  width: 45%;
+}
 #book .bookContainer .bookRow .bookImg img {
-  width: 577px;
-  height: 561px;
+  width: 110%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #book .bookContainer .bookRow .bookForm {
-  width: 614px;
-  height: 515px;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 #book .bookContainer .bookRow .bookForm div {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 #book .bookContainer .bookRow .bookForm div span {
-  margin: 10px 0;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   color: #666667;
@@ -335,21 +345,34 @@ header .responsMenu ul li div a:hover {
   color: #ffa500;
 }
 
-#packages .packagesCards {
+section {
+  overflow: hidden;
+}
+
+#packages {
+  overflow: hidden;
+}
+#packages .packageContainer {
+  width: 100%;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+#packages .packageContainer .packagesCards {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 17px;
 }
-#packages .packagesCards .packgesCard {
+#packages .packageContainer .packagesCards .packgesCard {
   width: 100%;
-  height: 500px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
-#packages .packagesCards .packgesCard img {
+#packages .packageContainer .packagesCards .packgesCard img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -357,50 +380,50 @@ header .responsMenu ul li div a:hover {
   border-top-right-radius: 5px;
   height: 16rem;
 }
-#packages .packagesCards .packgesCard .content {
-  padding: 25px;
+#packages .packageContainer .packagesCards .packgesCard .content {
+  padding: 20px;
 }
-#packages .packagesCards .packgesCard .content .place {
+#packages .packageContainer .packagesCards .packgesCard .content .place {
   display: flex;
 }
-#packages .packagesCards .packgesCard .content .place .location {
+#packages .packageContainer .packagesCards .packgesCard .content .place .location {
   color: #ffa500;
   font-size: 20px;
   padding-right: 5px;
   padding-top: 0px;
 }
-#packages .packagesCards .packgesCard .content .place h4 {
+#packages .packageContainer .packagesCards .packgesCard .content .place h4 {
   font-weight: 700;
   font-size: 20px;
 }
-#packages .packagesCards .packgesCard .content p {
+#packages .packageContainer .packagesCards .packgesCard .content p {
   color: #6c6666;
   font-size: 17px;
   margin-bottom: 0;
   line-height: 21px;
   text-transform: capitalize;
 }
-#packages .packagesCards .packgesCard .content .stars {
+#packages .packageContainer .packagesCards .packgesCard .content .stars {
   color: #ffa500;
   padding: 9px 0;
   font-size: 16px;
 }
-#packages .packagesCards .packgesCard .content h5 s {
+#packages .packageContainer .packagesCards .packgesCard .content h5 s {
   font-size: 15px;
   color: #6c6666;
 }
-#packages .packagesCards .packgesCard .content button {
+#packages .packageContainer .packagesCards .packgesCard .content button {
   border: 2px solid #ffa500;
   padding: 8px;
-  margin-top: 5px;
   color: #fff;
   background-color: #ffa500;
   width: 145px;
+  margin: 10px 0;
 }
-#packages .packagesCards .packgesCard .content button a {
+#packages .packageContainer .packagesCards .packgesCard .content button a {
   color: #fff;
 }
-#packages .packagesCards .packgesCard .content button:hover {
+#packages .packageContainer .packagesCards .packgesCard .content button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
 }
@@ -410,56 +433,61 @@ header .responsMenu ul li div a:hover {
   margin-bottom: 20px;
 }
 
-#services .serviceCards .serviceCard {
+#services .serviceContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+#services .serviceContainer .serviceCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#services .serviceContainer .serviceCards .serviceCard {
   text-align: center;
   padding: 10px;
 }
-#services .serviceCards .serviceCard i {
+#services .serviceContainer .serviceCards .serviceCard i {
   font-size: 55px;
   color: #ffa500;
 }
-#services .serviceCards .serviceCard h3 {
+#services .serviceContainer .serviceCards .serviceCard h3 {
   font-size: 25px;
   font-weight: 600;
   margin: 12px auto;
 }
-#services .serviceCards .serviceCard p {
+#services .serviceContainer .serviceCards .serviceCard p {
   font-size: 15px;
   color: #6c6666;
 }
-#services .serviceCards .serviceCard:hover {
+#services .serviceContainer .serviceCards .serviceCard:hover {
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 
 #gallery {
   overflow: hidden;
 }
-#gallery .gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+#gallery .galleryContainer {
+  width: 100%;
+  margin: 0 auto;
 }
-#gallery .gallery .case:hover .content {
+#gallery .galleryContainer .gallery .case:hover .content {
   top: 5px;
 }
-#gallery .gallery .case {
-  width: 100%;
-  height: 250px;
+#gallery .galleryContainer .gallery .case {
   overflow: hidden;
   position: relative;
   border: 5px solid #fff;
   border-radius: 7px;
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
   padding: 5px;
-  transition: all 0.8s ease-in;
 }
-#gallery .gallery .case img {
+#gallery .galleryContainer .gallery .case img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#gallery .gallery .case .content {
+#gallery .galleryContainer .gallery .case .content {
   position: absolute;
   z-index: 99;
   top: -500px;
@@ -470,18 +498,18 @@ header .responsMenu ul li div a:hover {
   width: 97%;
   height: 96%;
   color: #fff;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 }
-#gallery .gallery .case .content h4 {
+#gallery .galleryContainer .gallery .case .content h4 {
   color: #ffa500;
   font-weight: 700;
   font-size: 25px;
 }
-#gallery .gallery .case .content p {
+#gallery .galleryContainer .gallery .case .content p {
   width: 90%;
   margin: 10px auto;
 }
-#gallery .gallery .case .content button {
+#gallery .galleryContainer .gallery .case .content button {
   border: 2px solid #ffa500;
   padding: 6px;
   margin-top: 5px;
@@ -489,19 +517,17 @@ header .responsMenu ul li div a:hover {
   background-color: #ffa500;
   width: 135px;
 }
-#gallery .gallery .case .content button a {
+#gallery .galleryContainer .gallery .case .content button a {
   color: #fff;
 }
-#gallery .gallery .case .content button:hover {
+#gallery .galleryContainer .gallery .case .content button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
 }
-#gallery .egypt:hover .content {
+#gallery .galleryContainer .egypt:hover .content {
   top: 5px;
 }
-#gallery .egypt {
-  top: 30px;
-  width: 100%;
+#gallery .galleryContainer .egypt {
   left: auto;
   right: auto;
   height: 300px;
@@ -512,14 +538,16 @@ header .responsMenu ul li div a:hover {
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
   padding: 5px;
   transition: all 0.8s ease-in;
+  bottom: 10px;
+  right: 10px;
 }
-#gallery .egypt img {
+#gallery .galleryContainer .egypt img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#gallery .egypt .content {
+#gallery .galleryContainer .egypt .content {
   position: absolute;
   z-index: 99;
   top: -500px;
@@ -532,16 +560,16 @@ header .responsMenu ul li div a:hover {
   color: #fff;
   transition: all 0.2s linear;
 }
-#gallery .egypt .content h4 {
+#gallery .galleryContainer .egypt .content h4 {
   color: #ffa500;
   font-weight: 700;
   font-size: 25px;
 }
-#gallery .egypt .content p {
+#gallery .galleryContainer .egypt .content p {
   width: 90%;
   margin: 10px auto;
 }
-#gallery .egypt .content button {
+#gallery .galleryContainer .egypt .content button {
   border: 2px solid #ffa500;
   padding: 6px;
   margin-top: 5px;
@@ -549,10 +577,10 @@ header .responsMenu ul li div a:hover {
   background-color: #ffa500;
   width: 135px;
 }
-#gallery .egypt .content button a {
+#gallery .galleryContainer .egypt .content button a {
   color: #fff;
 }
-#gallery .egypt .content button:hover {
+#gallery .galleryContainer .egypt .content button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
 }
@@ -587,53 +615,186 @@ header .responsMenu ul li div a:hover {
   font-size: 17px;
 }
 
-#contact .contactForm img {
-  width: 90%;
-  margin: auto;
+#contact .contactContainer {
+  width: 80%;
+  margin: 0 auto;
 }
-#contact .contactForm .form {
-  margin: auto;
+#contact .contactContainer .contactForm {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact .contactContainer .contactForm .formImg {
+  width: 45%;
+}
+#contact .contactContainer .contactForm .formImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contact .contactContainer .contactForm .form {
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
   padding: 30px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 }
-#contact .contactForm .form div {
+#contact .contactContainer .contactForm .form div {
   width: 100%;
   margin: 10px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#contact .contactForm .form div input {
+#contact .contactContainer .contactForm .form div input {
   background-color: #f7f7f7;
   border: none;
   outline: none;
   padding: 10px;
-  width: 270px;
+  width: 55%;
   margin: 5px;
 }
-#contact .contactForm .form textarea {
-  width: 555px;
+#contact .contactContainer .contactForm .form textarea {
+  width: 99%;
   padding: 10px;
-  height: 142px;
   border: none;
   margin-left: 14px;
   background: #f7f7f7;
 }
-#contact .contactForm .form button {
+#contact .contactContainer .contactForm .form button {
   border: 2px solid #ffa500;
   padding: 6px;
-  margin: 10px 12px;
   color: #fff;
   background-color: #ffa500;
   width: 135px;
 }
-#contact .contactForm .form button a {
+#contact .contactContainer .contactForm .form button a {
   color: #fff;
 }
-#contact .contactForm .form button:hover {
+#contact .contactContainer .contactForm .form button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
+}
+
+#sponsors {
+  margin-top: 20px;
+}
+#sponsors .swiper {
+  width: 100%;
+  height: 100%;
+}
+#sponsors .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.i {
+  height: 2000px;
+}
+
+footer {
+  background-color: #333333;
+  width: 100%;
+  padding: 40px;
+  margin-top: 50px;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #ffa500;
+  text-decoration: underline;
+}
+footer hr {
+  margin: 20px auto;
+}
+footer .footerLink {
+  display: flex;
+  flex-direction: column;
+}
+footer span {
+  color: #ffa500;
+}
+
+@media (max-width: 1200px) {
+  #packages .packageContainer {
+    width: 98%;
+  }
+
+  #services .serviceContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 910px) {
+  #packages .packageContainer {
+    width: 90%;
+  }
+  #packages .packageContainer .packagesCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 990px) {
+  #book .bookContainer {
+    width: 98%;
+  }
+}
+@media (max-width: 770px) {
+  #book .bookContainer .bookRow {
+    flex-direction: column;
+  }
+  #book .bookContainer .bookRow .bookImg {
+    width: 90%;
+  }
+  #book .bookContainer .bookRow .bookForm {
+    width: 96%;
+  }
+
+  .allHeader {
+    font-size: 26px;
+    width: 101%;
+  }
+  .allHeader .space {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 520px) {
+  .allHeader {
+    font-size: 18px;
+    width: 101%;
+  }
+  .allHeader span {
+    padding: 10px 8px;
+  }
+}
+@media (max-width: 650px) {
+  #packages .packageContainer {
+    width: 90%;
+  }
+  #packages .packageContainer .packagesCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  #contact .contactContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  #contact .contactContainer .contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .contactContainer .contactForm .formImg {
+    width: 80%;
+  }
+  #contact .contactContainer .contactForm .form {
+    width: 98%;
+  }
 }/*# sourceMappingURL=style.css.map */

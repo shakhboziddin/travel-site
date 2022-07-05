@@ -20,3 +20,35 @@ var swiper = new Swiper(".review-cards", {
     },
 });
 
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 2,
+      },
+      400: {
+        slidesPerView: 3,
+      },
+        640: {
+          slidesPerView: 3,
+        },
+
+        800: {
+            slidesPerView: 4,
+        },
+        900: {
+            slidesPerView: 5,
+        },
+       
+    },
+  });
