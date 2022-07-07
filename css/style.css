@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+nav {
+  background-color: #333333;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,14 +29,12 @@ li {
 }
 
 header {
-  background-color: #333333;
   color: #fff;
   display: flex;
   align-items: center;
   width: 100%;
   position: fixed;
   z-index: 9999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
   flex-direction: column;
 }
 header .nav {
@@ -154,13 +157,139 @@ header .navContainer .siteNav .navLogin i:hover {
     top: 0px;
   }
 }
+header .searchForm {
+  width: 100%;
+  position: absolute;
+  background: #333333;
+  top: 75px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(98, 94, 94);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .searchForm input {
+  width: 94%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
+}
+header .searchForm i {
+  margin-left: 9px;
+  font-size: 30px;
+}
+header .searchForm i:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+header .searchForm.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .form.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .form {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  z-index: 99999999;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .form .formClose {
+  text-align: right;
+  margin: 30px;
+  width: 90%;
+  padding-bottom: 50px;
+}
+header .form .formClose i {
+  color: #ffa500;
+  font-size: 40px;
+  cursor: pointer;
+}
+header .form .login {
+  background-color: #fff;
+  padding: 40px 0;
+  color: #000;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .form .login h2 {
+  color: #ffa500;
+  font-weight: 700;
+  font-size: 40px;
+}
+header .form .login div {
+  width: 80%;
+}
+header .form .login div .inp {
+  width: 100%;
+  padding: 8px;
+  margin: 10px;
+  outline-color: #ffa500;
+}
+header .form .login .check {
+  margin-left: 5px;
+}
+header .form .login p {
+  margin-left: 5px;
+}
+header .form .login .remember {
+  display: flex;
+  align-items: center;
+}
+header .form .login .remember p {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+header .form .login .btn {
+  width: 80%;
+  margin-left: 18px;
+  outline: none;
+  border: none;
+}
+header .form .login .btn button {
+  border: 2px solid #ffa500;
+  padding: 6px;
+  color: #fff;
+  background-color: #ffa500;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header .form .login .btn button a {
+  color: #fff;
+}
+header .form .login .btn button:hover {
+  background-color: rgba(255, 166, 0, 0.3764705882);
+  color: #ffa500;
+}
 header .responsMenu {
   width: 100%;
   color: #fff;
   background: #333333;
   border-top: 1px solid #fff;
   transition: all 0.3s ease;
-  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 header .responsMenu ul {
   padding: 15px;
@@ -180,6 +309,11 @@ header .responsMenu ul li div a {
 }
 header .responsMenu ul li div a:hover {
   color: #ffa500;
+}
+header .responsMenu.active {
+  display: block;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 @media (max-width: 990px) {
   header .navContainer {
@@ -271,7 +405,7 @@ header .responsMenu ul li div a:hover {
 
 .allHeader {
   text-align: center;
-  padding: 2.5rem;
+  padding: 3.5rem 0;
   margin: auto;
   width: 100%;
   margin: 0px auto;
@@ -312,6 +446,7 @@ header .responsMenu ul li div a:hover {
   height: 100%;
   padding: 20px;
   border-radius: 5px;
+  margin: 20px;
   box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 #book .bookContainer .bookRow .bookForm div {
@@ -355,7 +490,6 @@ section {
 #packages .packageContainer {
   width: 100%;
   overflow: hidden;
-  width: 80%;
   margin: auto;
 }
 #packages .packageContainer .packagesCards {
@@ -363,9 +497,11 @@ section {
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 17px;
+  margin: 30px auto;
 }
 #packages .packageContainer .packagesCards .packgesCard {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -467,127 +603,70 @@ section {
   overflow: hidden;
 }
 #gallery .galleryContainer {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
-#gallery .galleryContainer .gallery .case:hover .content {
-  top: 5px;
+#gallery .galleryContainer .boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-#gallery .galleryContainer .gallery .case {
-  overflow: hidden;
+#gallery .galleryContainer .boxContainer .box {
+  height: 250px;
+  flex: 1 1 15rem;
   position: relative;
-  border: 5px solid #fff;
-  border-radius: 7px;
-  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
-  padding: 5px;
+  overflow: hidden;
+  border: 10px solid #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
-#gallery .galleryContainer .gallery .case img {
+#gallery .galleryContainer .boxContainer .box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#gallery .galleryContainer .gallery .case .content {
+#gallery .galleryContainer .boxContainer .box .content {
   position: absolute;
   z-index: 99;
-  top: -500px;
-  padding: 12px;
-  text-align: center;
-  padding-top: 40px;
-  background: rgba(0, 0, 0, 0.7);
-  width: 97%;
-  height: 96%;
+  padding: 20px;
   color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  top: -500px;
+  width: 100%;
+  height: 100%;
   transition: all 0.3s linear;
 }
-#gallery .galleryContainer .gallery .case .content h4 {
+#gallery .galleryContainer .boxContainer .box .content h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 100%;
   color: #ffa500;
-  font-weight: 700;
-  font-size: 25px;
 }
-#gallery .galleryContainer .gallery .case .content p {
-  width: 90%;
-  margin: 10px auto;
-}
-#gallery .galleryContainer .gallery .case .content button {
+#gallery .galleryContainer .boxContainer .box .content button {
   border: 2px solid #ffa500;
-  padding: 6px;
-  margin-top: 5px;
+  padding: 8px;
   color: #fff;
   background-color: #ffa500;
-  width: 135px;
+  width: 125px;
+  margin: -3px 0;
+  z-index: 999;
 }
-#gallery .galleryContainer .gallery .case .content button a {
+#gallery .galleryContainer .boxContainer .box .content button a {
   color: #fff;
 }
-#gallery .galleryContainer .gallery .case .content button:hover {
+#gallery .galleryContainer .boxContainer .box .content button:hover {
   background-color: rgba(255, 166, 0, 0.3764705882);
   color: #ffa500;
 }
-#gallery .galleryContainer .egypt:hover .content {
-  top: 5px;
-}
-#gallery .galleryContainer .egypt {
-  left: auto;
-  right: auto;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  border: 5px solid #fff;
-  border-radius: 7px;
-  box-shadow: 0px 5px 15px 0px rgba(34, 60, 80, 0.2);
-  padding: 5px;
-  transition: all 0.8s ease-in;
-  bottom: 10px;
-  right: 10px;
-}
-#gallery .galleryContainer .egypt img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#gallery .galleryContainer .egypt .content {
-  position: absolute;
-  z-index: 99;
-  top: -500px;
-  padding: 12px;
-  text-align: center;
-  padding-top: 40px;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 96%;
-  color: #fff;
-  transition: all 0.2s linear;
-}
-#gallery .galleryContainer .egypt .content h4 {
-  color: #ffa500;
-  font-weight: 700;
-  font-size: 25px;
-}
-#gallery .galleryContainer .egypt .content p {
-  width: 90%;
-  margin: 10px auto;
-}
-#gallery .galleryContainer .egypt .content button {
-  border: 2px solid #ffa500;
-  padding: 6px;
-  margin-top: 5px;
-  color: #fff;
-  background-color: #ffa500;
-  width: 135px;
-}
-#gallery .galleryContainer .egypt .content button a {
-  color: #fff;
-}
-#gallery .galleryContainer .egypt .content button:hover {
-  background-color: rgba(255, 166, 0, 0.3764705882);
-  color: #ffa500;
+#gallery .galleryContainer .boxContainer .box:hover .content {
+  top: 0;
 }
 
 #review {
   overflow: hidden;
   padding: 20px;
+  margin: 20px;
 }
 #review .block {
   border-radius: 15px;
@@ -643,6 +722,7 @@ section {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  margin: 30px auto;
 }
 #contact .contactContainer .contactForm .form div {
   width: 100%;
