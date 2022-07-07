@@ -211,6 +211,7 @@ header .form .formClose {
   margin: 30px;
   width: 90%;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 header .form .formClose i {
   color: #ffa500;
@@ -221,7 +222,7 @@ header .form .login {
   background-color: #fff;
   padding: 40px 0;
   color: #000;
-  width: 500px;
+  width: 80%;
   border-radius: 5px;
   display: flex;
   align-items: center;
